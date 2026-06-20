@@ -1,32 +1,25 @@
-# Road Sign Detection System
+# Road Sign Detection — Traditional Computer Vision
 
-A computer vision system that detects and classifies road signs in real time, built by training a YOLOv8m object detection model on road sign imagery.
+A road sign detection system built using classical (non-deep-learning) computer vision techniques — image processing, edge/shape detection and feature-based classification rather than a trained neural network.
+
+> **Note:** This is a separate project from [Road Sign Detection (YOLOv8)](https://github.com/Bidex18/Image-processing) — that one uses a trained CNN (YOLOv8m); this one solves the same problem using traditional CV methods (e.g. edge detection, colour/shape-based feature extraction). Built to demonstrate both approaches.
 
 ## What it does
 
-- Detects and classifies road signs from images using a custom-trained **YOLOv8m** model.
-- Achieves **90% detection accuracy** on the trained dataset.
-- Runs inference through a Python script for real-time/near-real-time detection.
+- Detects and classifies road signs in images using classical computer vision techniques rather than machine learning.
+- Processes images through traditional CV pipelines (filtering, edge detection, shape/colour-based feature extraction) to identify sign type.
 
 ## Tools & Stack
 
 - **Python**
-- **YOLOv8m** (Ultralytics)
-- **Google Colab** (model training)
-- OpenCV (image handling/inference pipeline)
-
-## How it works
-
-1. A custom road sign image dataset was used to fine-tune the YOLOv8m model on Google Colab.
-2. The trained model weights are loaded by a Python inference script.
-3. The script runs detection on input images, drawing bounding boxes and classification labels around identified road signs.
+- OpenCV-based image processing techniques
 
 ## Files
 
-- `acw2.py` — main inference/detection script
-- `code.zip` — full project code
-- `Acw2 report.pdf` — full technical write-up and evaluation
+- `acw1.py` — main detection/classification script
+- `requirements.txt` — project dependencies
+- `ACW1 report.docx` — full technical write-up and evaluation
 
 ## Status
 
-Individual project. Trained and tested on a custom road sign dataset, 90% detection accuracy achieved.
+Individual project. Built and tested using a traditional computer vision pipeline.
